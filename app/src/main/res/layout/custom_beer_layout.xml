@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_friend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beer_glass"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/bber_details_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/coverImage"
+            android:layout_toLeftOf="@+id/btn_add_to_cart"
+            android:layout_marginLeft="@dimen/margin_left_text_adpater"
+            >
+            <TextView
+                android:id="@+id/title"
+                style="@style/AppText_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/beer_style"
+                android:layout_below="@+id/title"
+                android:text="American Pale Lager"
+                android:textStyle="italic"
+                style="@style/AppText_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/alcohol_cont"
+                android:layout_below="@+id/beer_style"
+                android:text="Alcoholic Content : 0.05"
+                android:textStyle="italic"
+                style="@style/AppText_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/add_to_cart"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/size_3"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BeerCraft</string>
+    <string name="no_internet">Try Again!</string>
+</resources>
